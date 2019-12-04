@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="doublea">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.16">
+    <root id="1">
+      <ServerVersion>3.27.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="agent"/>
+    <table id="7" parent="2" name="employee"/>
+    <table id="8" parent="2" name="expense"/>
+    <table id="9" parent="2" name="house"/>
+    <table id="10" parent="2" name="landlord"/>
+    <table id="11" parent="2" name="penalty"/>
+    <table id="12" parent="2" name="rent"/>
+    <table id="13" parent="2" name="salary"/>
+    <table id="14" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="15" parent="2" name="tenant"/>
+    <column id="16" parent="6" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="6" name="firstName">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="6" name="lastName">
+      <Position>3</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="6" name="gender">
+      <Position>4</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="6" name="email">
+      <Position>5</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="6" name="nationalId">
+      <Position>6</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="6" name="password">
+      <Position>7</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="23" parent="6" name="sqlite_autoindex_agent_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="6">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_agent_1</UnderlyingIndexName>
+    </key>
+    <column id="25" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="7" name="firstName">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="7" name="lastName">
+      <Position>3</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="7" name="gender">
+      <Position>4</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="7" name="email">
+      <Position>5</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="7" name="password">
+      <Position>6</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+    </column>
+    <column id="31" parent="7" name="nationalId">
+      <Position>7</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="7" name="employeeType">
+      <Position>8</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="7" name="salaryAmount">
+      <Position>9</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="34" parent="7" name="sqlite_autoindex_employee_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="7">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_employee_1</UnderlyingIndexName>
+    </key>
+    <column id="36" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="8" name="expenseType">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="8" name="date">
+      <Position>3</Position>
+      <DataType>DATETIME|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="8" name="expenseAmount">
+      <Position>4</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="40" parent="8" name="sqlite_autoindex_expense_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="8">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_expense_1</UnderlyingIndexName>
+    </key>
+    <column id="42" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="9" name="estate">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="9" name="size">
+      <Position>3</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="9" name="houseNumber">
+      <Position>4</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="9" name="agentId">
+      <Position>5</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="9" name="landlordId">
+      <Position>6</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="9" name="status">
+      <Position>7</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="9" name="rentAmount">
+      <Position>8</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="50" parent="9" name="tenantId">
+      <Position>9</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <index id="51" parent="9" name="sqlite_autoindex_house_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="9">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_house_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="53" parent="9">
+      <ColNames>agentId</ColNames>
+      <RefTableName>agent</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="54" parent="9">
+      <ColNames>landlordId</ColNames>
+      <RefTableName>landlord</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="55" parent="9">
+      <ColNames>tenantId</ColNames>
+      <RefTableName>tenant</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="56" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="10" name="firstName">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="10" name="lastName">
+      <Position>3</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="10" name="gender">
+      <Position>4</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="10" name="email">
+      <Position>5</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="10" name="nationalId">
+      <Position>6</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="62" parent="10" name="sqlite_autoindex_landlord_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="10">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_landlord_1</UnderlyingIndexName>
+    </key>
+    <column id="64" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="11" name="date">
+      <Position>2</Position>
+      <DataType>DATETIME|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="66" parent="11" name="sqlite_autoindex_penalty_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="67" parent="11">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_penalty_1</UnderlyingIndexName>
+    </key>
+    <column id="68" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="12" name="date">
+      <Position>2</Position>
+      <DataType>DATETIME|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="12" name="paymentType">
+      <Position>3</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="12" name="tenantId">
+      <Position>4</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="12" name="houseId">
+      <Position>5</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="12" name="amountDue">
+      <Position>6</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="12" name="amountPayed">
+      <Position>7</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="12" name="balance">
+      <Position>8</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="76" parent="12" name="sqlite_autoindex_rent_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="77" parent="12">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_rent_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="78" parent="12">
+      <ColNames>tenantId</ColNames>
+      <RefTableName>tenant</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="79" parent="12">
+      <ColNames>houseId</ColNames>
+      <RefTableName>house</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="80" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="13" name="employeeId">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="13" name="salaryAmount">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="13" name="date">
+      <Position>4</Position>
+      <DataType>DATETIME|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="84" parent="13" name="sqlite_autoindex_salary_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="85" parent="13">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_salary_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="86" parent="13">
+      <ColNames>employeeId</ColNames>
+      <RefTableName>employee</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="87" parent="14" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="88" parent="14" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="89" parent="14" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="90" parent="14" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="91" parent="14" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="92" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="15" name="firstName">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="94" parent="15" name="lastName">
+      <Position>3</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="95" parent="15" name="nationalId">
+      <Position>4</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="15" name="gender">
+      <Position>5</Position>
+      <DataType>VARCHAR(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="15" name="agentId">
+      <Position>6</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="98" parent="15" name="sqlite_autoindex_tenant_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="99" parent="15">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sqlite_autoindex_tenant_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="100" parent="15">
+      <ColNames>agentId</ColNames>
+      <RefTableName>agent</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" layoutX="7.0" prefHeight="575.0" prefWidth="975.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ml.allansifuna.controllers.AgentDashboard">
+    <children>
+        <AnchorPane layoutX="-10.0" prefHeight="503.0" prefWidth="142.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-10.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Accordion layoutX="8.0" layoutY="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="btnAddHouse" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutY="153.0" mnemonicParsing="false" onAction="#addHouse" stylesheets="@../styling/fullpackstyling.css" text="Add House" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnPayRent" alignment="BASELINE_LEFT" layoutY="199.0" mnemonicParsing="false" onAction="#addRent" stylesheets="@../styling/fullpackstyling.css" text="Pay Rent" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Pane layoutX="38.0" layoutY="5.0" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: white;">
+                    <children>
+                        <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="2.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../images/icon8.png" />
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button fx:id="btnRemoveTenant" alignment="BASELINE_LEFT" layoutY="245.0" mnemonicParsing="false" onAction="#removeTenant" stylesheets="@../styling/fullpackstyling.css" text="Remove Tenant" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" top="15.0" />
+                    </padding>
+                </Button>
+            <Button fx:id="btnLogout" layoutX="40.0" layoutY="450.0" mnemonicParsing="false" onAction="#logout" styleClass="btnBlue" stylesheets="@../styling/fullpackstyling.css" text="Log Out" />
+            <Button fx:id="btnMyProfile" alignment="BASELINE_LEFT" layoutX="2.0" layoutY="292.0" mnemonicParsing="false" onAction="#myProfile" prefHeight="46.0" prefWidth="142.0" stylesheets="@../styling/fullpackstyling.css" text="My Profile">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+            </Button>
+
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="394.0" layoutY="466.0" prefHeight="23.0" prefWidth="125.0" text="Design by @allan" textFill="#5b5a5a" AnchorPane.bottomAnchor="14.0">
+            <font>
+                <Font name="Segoe UI" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblMessage" layoutX="494.0" layoutY="64.0" prefHeight="16.0" prefWidth="282.0" />
+        <Pane layoutX="134.0" layoutY="62.0" prefHeight="473.0" prefWidth="843.0" style="-fx-background-color: #D1D3E2;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="62.0">
+            <children>
+                <GridPane alignment="CENTER" hgap="10.0" layoutX="166.0" layoutY="53.0" prefHeight="362.0" prefWidth="478.0" vgap="10.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="199.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="241.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="227.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="btnViewTenants" contentDisplay="TOP" mnemonicParsing="false" onAction="#viewTenants" prefHeight="181.0" prefWidth="242.0" text="View Tenants" textFill="#0c39ff">
+                            <graphic>
+                                <FontAwesomeIconView fill="#2d75e8" glyphName="GROUP" size="50" />
+                            </graphic>
+                        </Button>
+                        <Button fx:id="btnVaccantHouses" contentDisplay="TOP" mnemonicParsing="false" onAction="#viewVaccantHouses" prefHeight="181.0" prefWidth="242.0" text="View Vaccant Houses" textFill="#0c39ff" GridPane.columnIndex="1">
+                            <graphic>
+                                <FontAwesomeIconView fill="#2d75e8" glyphName="HOME" size="50" />
+                            </graphic>
+                        </Button>
+                        <Button fx:id="btnRentDefaulters" contentDisplay="TOP" mnemonicParsing="false" onAction="#viewDefaultedRent" prefHeight="181.0" prefWidth="242.0" text="View Rent Defaulters" textFill="#0c39ff" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <graphic>
+                                <FontAwesomeIconView fill="#2d75e8" glyphName="EXCHANGE" size="50" />
+                            </graphic>
+                        </Button>
+                        <Button fx:id="btnRentReport" contentDisplay="TOP" mnemonicParsing="false" onAction="#agentRentReport" prefHeight="181.0" prefWidth="242.0" text="View Rent Report" textFill="#0c39ff" GridPane.rowIndex="1">
+                            <graphic>
+                                <FontAwesomeIconView fill="#2d75e8" glyphName="INDENT" size="50" strokeMiterLimit="20.0" text="" />
+                            </graphic>
+                        </Button>
+                    </children>
+                </GridPane>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="26.0" prefWidth="103.0" text="Logged in As :" />
+            <Label fx:id="lblTime" layoutX="529.0" layoutY="14.0" prefHeight="26.0" prefWidth="282.0" />
+            <Hyperlink fx:id="hlProfile" layoutX="117.0" layoutY="13.0" onAction="#myProfile" prefHeight="24.0" prefWidth="258.0" />
+            </children>
+        </Pane>
+        <Label fx:id="lblTitle" alignment="CENTER" layoutX="134.0" prefHeight="62.0" prefWidth="852.0" style="-fx-background-color: white;" text="DOUBLEA MANAGEMENT INFORMATION SYSTEM" textFill="#0c39ff" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

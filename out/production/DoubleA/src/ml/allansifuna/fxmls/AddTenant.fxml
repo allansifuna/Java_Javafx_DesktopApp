@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import impl.com.calendarfx.view.NumericTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="952.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ml.allansifuna.controllers.AddTenant">
+    <children>
+        <Pane layoutX="369.0" prefHeight="564.0" prefWidth="485.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="469.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="75.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                    <!--<image>
+                        <Image url="@../images/icons8_Google_Wallet_50px.png" />
+                    </image>-->
+                </ImageView>
+                <TextField fx:id="txtFname" layoutX="75.0" layoutY="210.0" prefHeight="34.0" prefWidth="278.0" promptText="First Name" />
+                <TextField fx:id="txtLname" layoutX="75.0" layoutY="269.0" prefHeight="34.0" prefWidth="278.0" promptText="Last Name" />
+                <NumericTextField fx:id="txtNatId" layoutX="75.0" layoutY="331.0" prefHeight="34.0" prefWidth="278.0" promptText="National Id" />
+                <Button fx:id="btnAddTenant" layoutX="76.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#addTenant" prefHeight="34.0" prefWidth="278.0" stylesheets="@../styling/fullpackstyling.css" text="Save">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.4375" startY="0.9471153846153846">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color blue="0.8157894611358643" green="0.037768032401800156" red="0.1544712483882904" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color blue="1.0" green="1.0" red="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <styleClass>
+                  <String fx:value="btnBlue" />
+                  <String fx:value="btnBlue" />
+               </styleClass></Button>
+                <ComboBox fx:id="cbGender" layoutX="76.0" layoutY="395.0" prefHeight="34.0" prefWidth="278.0" promptText="Gender" visibleRowCount="3">
+                </ComboBox>
+            <Label layoutX="127.0" layoutY="28.0" prefHeight="16.0" prefWidth="162.0" text="Add Tenant" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMessage" layoutX="75.0" layoutY="57.0" prefWidth="278.0" />
+            <Label fx:id="lblFnameError" layoutX="75.0" layoutY="245.0" prefHeight="16.0" prefWidth="278.0" />
+            <Label fx:id="lblLnameError" layoutX="74.0" layoutY="307.0" prefHeight="16.0" prefWidth="278.0" />
+            <Label fx:id="lblNatIdError" layoutX="74.0" layoutY="369.0" prefHeight="16.0" prefWidth="278.0" />
+            <Label fx:id="lblGenderError" layoutX="74.0" layoutY="435.0" prefHeight="16.0" prefWidth="278.0" />
+            <TextField fx:id="txtHouseNumber" editable="false" layoutX="75.0" layoutY="105.0" prefHeight="34.0" prefWidth="278.0" promptText="House Number" />
+            <TextField fx:id="txtAgentName" editable="false" layoutX="74.0" layoutY="155.0" prefHeight="34.0" prefWidth="278.0" promptText="Agent Name" />
+            </children>
+        </Pane>
+      <Pane prefHeight="564.0" prefWidth="468.0">
+         <children>
+             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="134.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../images/icon8.png" />
+             </ImageView>
+                <Label alignment="CENTER" layoutX="73.0" layoutY="355.0" prefHeight="24.0" prefWidth="270.0" text="A Reliable Apartment Management Partner " textFill="#0c39ff">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="22.0" layoutY="314.0" prefHeight="23.0" prefWidth="397.0" text="DoubleA Management Information System" textFill="#0c39ff">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+            <Button fx:id="btnBack" layoutX="177.0" layoutY="461.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../styling/fullpackstyling.css" text="Back" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

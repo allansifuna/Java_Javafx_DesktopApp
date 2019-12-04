@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import impl.com.calendarfx.view.NumericTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" layoutX="7.0" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ml.allansifuna.controllers.AddLandlord">
+    <children>
+        <AnchorPane layoutX="-8.0" prefHeight="503.0" prefWidth="390.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="166.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                    <!--<image>
+                        <Image url="@../images/icons8_Google_Wallet_50px.png" />
+                    </image>-->
+                </ImageView>
+                <Label alignment="CENTER" layoutX="14.0" layoutY="124.0" prefHeight="23.0" prefWidth="375.0" text="DoubleA Management Information System" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="55.0" layoutY="168.0" prefHeight="23.0" prefWidth="275.0" text="The Best Apartment Management Partner" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="109.0" layoutY="280.0" prefHeight="35.0" prefWidth="173.0" text="Add Landlord" textFill="#f8f4f4">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+            <Button fx:id="btnBack" layoutX="135.0" layoutY="422.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../styling/fullpackstyling.css" text="Back" />
+            </children>
+        </AnchorPane>
+        <Pane layoutX="488.0" layoutY="100.0" AnchorPane.bottomAnchor="73.0" AnchorPane.topAnchor="100.0">
+            <children>
+                <TextField fx:id="txtFname" layoutX="7.0" prefHeight="34.0" prefWidth="275.0" promptText="First Name" />
+                <TextField fx:id="txtLname" layoutX="7.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0" promptText="Last Name" />
+                <NumericTextField fx:id="txtNatId" layoutX="7.0" layoutY="244.0" prefHeight="34.0" prefWidth="275.0" promptText="National Id" />
+                <TextField fx:id="txtEmail" layoutX="7.0" layoutY="183.0" prefHeight="34.0" prefWidth="275.0" promptText="Email" />
+                <Button fx:id="btnAddLandlord" layoutX="4.0" layoutY="305.0" mnemonicParsing="false" onAction="#addLandlord" prefHeight="34.0" prefWidth="275.0" styleClass="ml.alla" stylesheets="@../styling/fullpackstyling.css" text="Add Landlord" textFill="WHITE">
+                    <!--<graphic>
+                        <ImageView fitHeight="16.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                            <Image url="@../images/icons8_Facebook_F_48px.png" />
+                        </image>
+                        </ImageView>
+                    </graphic>-->
+                </Button>
+                <ComboBox fx:id="cbGender" layoutX="7.0" layoutY="122.0" prefHeight="34.0" prefWidth="275.0" promptText="Gender" stylesheets="@../styling/fullpackstyling.css" visibleRowCount="3" />
+                <Label fx:id="lblFnameError" layoutX="4.0" layoutY="34.0" prefHeight="16.0" prefWidth="275.0" />
+                <Label fx:id="lblLnameError" layoutX="7.0" layoutY="95.0" prefHeight="16.0" prefWidth="275.0" />
+                <Label fx:id="lblGenderError" layoutX="7.0" layoutY="157.0" prefHeight="16.0" prefWidth="275.0" />
+                <Label fx:id="lblEmailError" layoutX="7.0" layoutY="217.0" prefHeight="16.0" prefWidth="275.0" />
+                <Label fx:id="lblNatIdError" layoutX="4.0" layoutY="278.0" prefHeight="16.0" prefWidth="275.0" />
+            </children>
+        </Pane>
+        <Label alignment="CENTER" layoutX="394.0" layoutY="466.0" prefHeight="23.0" prefWidth="125.0" text="Design by @allan" textFill="#5b5a5a" AnchorPane.bottomAnchor="14.0">
+            <font>
+                <Font name="Segoe UI" size="12.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="409.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../images/icon8.png" />
+        </ImageView>
+        <Label fx:id="lblMessage" layoutX="494.0" layoutY="64.0" prefHeight="16.0" prefWidth="282.0" />
+    </children>
+</AnchorPane>

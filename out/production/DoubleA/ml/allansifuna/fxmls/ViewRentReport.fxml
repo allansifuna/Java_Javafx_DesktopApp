@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ml.allansifuna.controllers.ViewRentReport">
+    <children>
+        <Pane prefHeight="564.0" prefWidth="279.0" style="-fx-background-color: #0C39FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" layoutX="21.0" layoutY="120.0" prefHeight="23.0" prefWidth="216.0" text="DoubleA Management" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="-1.0" layoutY="192.0" prefHeight="23.0" prefWidth="279.0" text="A Reliable Apartment Management Partner" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="21.0" layoutY="149.0" prefHeight="23.0" prefWidth="216.0" text="Information System" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="15.0" layoutY="268.0" prefHeight="23.0" prefWidth="231.0" text="Rent Report" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="105.0" layoutY="49.0" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: white;">
+                    <children>
+                        <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@../images/icon8.png" />
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button fx:id="btnBack" layoutX="97.0" layoutY="449.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../styling/fullpackstyling.css" text="Back" />
+            </children>
+        </Pane>
+      <TextField fx:id="txtExpenses" layoutX="446.0" layoutY="388.0" prefHeight="32.0" prefWidth="258.0" promptText="Expenses" />
+      <TextField fx:id="txtProfit" layoutX="446.0" layoutY="455.0" prefHeight="32.0" prefWidth="258.0" promptText="Profit" />
+      <TextField fx:id="txtRentCollcted" layoutX="446.0" layoutY="113.0" prefHeight="32.0" prefWidth="258.0" promptText="Rent Collected" />
+      <Label layoutX="446.0" layoutY="86.0" prefHeight="16.0" prefWidth="258.0" text="Total Rent Collected" />
+      <Label layoutX="445.0" layoutY="362.0" prefHeight="16.0" prefWidth="258.0" text="Total Expenses" />
+      <Label layoutX="447.0" layoutY="432.0" prefHeight="16.0" prefWidth="258.0" text="Company Profit" />
+      <Label fx:id="lblTitle" layoutX="434.0" layoutY="16.0" prefHeight="32.0" prefWidth="320.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtToLandlords" layoutX="447.0" layoutY="187.0" prefHeight="32.0" prefWidth="258.0" promptText="Expenses" />
+      <Label layoutX="446.0" layoutY="161.0" prefHeight="16.0" prefWidth="258.0" text="Remmited to Landlords" />
+      <TextField fx:id="txtToAgents" layoutX="446.0" layoutY="251.0" prefHeight="32.0" prefWidth="258.0" promptText="Expenses" />
+      <Label layoutX="445.0" layoutY="225.0" prefHeight="16.0" prefWidth="258.0" text="Remmited to Agents" />
+      <TextField fx:id="txtSalaries" layoutX="447.0" layoutY="319.0" prefHeight="32.0" prefWidth="258.0" promptText="Expenses" />
+      <Label layoutX="446.0" layoutY="293.0" prefHeight="16.0" prefWidth="258.0" text="Total Salaries" />
+      <Label layoutX="439.0" layoutY="44.0" prefHeight="23.0" prefWidth="279.0" />
+    </children>
+</AnchorPane>

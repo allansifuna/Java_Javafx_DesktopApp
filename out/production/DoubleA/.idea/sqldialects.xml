@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/AddAgent.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/AddExpense.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/AddHouse.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/AddRent.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/AddTenant.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/AssignTenant.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/ViewHouses.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/ViewRentDefaulters.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/ViewRentReport.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/controllers/ViewTenants.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/home/Main.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/ml/allansifuna/penalties/Penalty.java" dialect="GenericSQL" />
+  </component>
+</project>

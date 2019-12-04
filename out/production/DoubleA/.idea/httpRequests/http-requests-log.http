@@ -1,0 +1,67 @@
+POST http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+Authorization: Basic YWxsYW5zaWZ1bmE6bmFtYXNha2E4OA==
+
+--null
+
+
+< /media/allansifuna/Local Disk/Desktop/Android Drawing Separator_Divider Line in Layout_ - Stack Overflow.pdf
+--null--
+
+###
+
+POST http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 1d036829-32af-47af-acb5-3f36d2a7b394,
+  "price": 676,
+  "ts": 1571223746,
+  "value": "content"
+}
+
+###
+
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 8bb56d10-eabd-43e6-9e7d-15a6295337a6,
+  "price": 880,
+  "ts": 1571223437,
+  "value": "content"
+}
+
+###
+
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 3bf76920-300b-472a-945d-7ada609c8031,
+  "price": 742,
+  "ts": 1571223396,
+  "value": "content"
+}
+
+###
+
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 1639ea26-df49-4285-8201-bd8c41896fa3,
+  "price": 809,
+  "ts": 1571223389,
+  "value": "content"
+}
+
+###
+

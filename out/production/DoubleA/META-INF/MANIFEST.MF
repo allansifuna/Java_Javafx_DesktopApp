@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: /home/allansifuna/IdeaProjects/DoubleA/lib/fontawesomefx-c
+ ommons-8.13.jar:/home/allansifuna/IdeaProjects/DoubleA/lib/fontawesom
+ efx-fontawesome-4.7.0-1.jar:/home/allansifuna/IdeaProjects/DoubleA/li
+ b/view-8.4.2.jar:/home/allansifuna/IdeaProjects/DoubleA/lib/sqlite-jd
+ bc-3.27.2.1.jar:/home/allansifuna/IdeaProjects/DoubleA/lib/jBCrypt-0.
+ 4.1.jar
+Main-Class: ml.allansifuna.home.Main
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DoubleA.jnlp">
+  <information>
+    <title>DoubleA Management Information System</title>
+    <vendor>Allan Sifuna</vendor>
+    <description>DoubleA is a Property Management System.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DoubleA.jar" size="254418" download="eager" />
+    <jar href="fontawesomefx-commons-8.13.jar" size="20607" download="eager" />
+    <jar href="fontawesomefx-fontawesome-4.7.0-1.jar" size="135304" download="eager" />
+    <jar href="jBCrypt-0.4.1.jar" size="17570" download="eager" />
+    <jar href="lib/fontawesomefx-commons-8.13.jar" size="20607" download="eager" />
+    <jar href="lib/fontawesomefx-fontawesome-4.7.0-1.jar" size="135304" download="eager" />
+    <jar href="lib/jBCrypt-0.4.1.jar" size="17570" download="eager" />
+    <jar href="lib/sqlite-jdbc-3.27.2.1.jar" size="6012107" download="eager" />
+    <jar href="lib/view-8.4.2.jar" size="745112" download="eager" />
+    <jar href="sqlite-jdbc-3.27.2.1.jar" size="6012107" download="eager" />
+    <jar href="view-8.4.2.jar" size="745112" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <jfx:javafx-desc  width="975" height="575" main-class="ml.allansifuna.home.Main"  name="DoubleA" />
+  <update check="background"/>
+</jnlp>

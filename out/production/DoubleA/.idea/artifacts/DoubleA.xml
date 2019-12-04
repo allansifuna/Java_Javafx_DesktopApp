@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="DoubleA">
+    <output-path>$PROJECT_DIR$/out/artifacts/DoubleA</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="alias" value="" />
+        <option name="appClass" value="ml.allansifuna.home.Main" />
+        <option name="convertCss2Bin" value="true" />
+        <option name="description" value="DoubleA is a Property Management System." />
+        <option name="enabledSigning" value="true" />
+        <option name="height" value="575" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/src/ml/allansifuna/images/icon8.png" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/ml/allansifuna/images/icon8 .ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="keystore" value="" />
+        <option name="msgOutputLevel" value="Debug" />
+        <option name="nativeBundle" value="deb" />
+        <option name="title" value="DoubleA Management Information System" />
+        <option name="vendor" value="Allan Sifuna" />
+        <option name="version" value="1.0.0-Alpha" />
+        <option name="width" value="975" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="DoubleA.jar">
+        <element id="module-output" name="DoubleA" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/lib/fontawesomefx-commons-8.13.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/fontawesomefx-fontawesome-4.7.0-1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/jBCrypt-0.4.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/sqlite-jdbc-3.27.2.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/view-8.4.2.jar" />
+    </root>
+  </artifact>
+</component>
